@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+body {
+   font-family: Georgia, Times, serif;
+}
+h1 {
+  margin:15px 0 15px 0;
+  text-align: center;
+}
+
+div {
+  background-color: gray;
+  border: 1px solid black;
+}
+
+p.section{
+  margin:10px;
+}
+
+#p1 {
+  background-color: pink;
+  border: 1px solid black;
+  width: 30%;
+  color: black;
+  position: relative;
+  padding:3px;
+  left:70%;
+  top:0;
+  text-align: center;
+}
+
+#p2 {
+  background-color: yellow;
+  border: 1px solid black;
+  width: 30%;
+  color: black;
+  position: relative;
+  padding:3px;
+  left:70%;
+  top:0;
+  text-align: center;
+}
+
+#p3 {
+  background-color: maroon;
+  border: 1px solid black;
+  width: 30%;
+  color: white;
+  position: relative;
+  padding:3px;
+  left:70%;
+  top:0;
+  text-align: center;
+}
+/* Simple Responsive Framework. */
+.row {
+  width: 95%;
+  margin:auto;
+}
+
+/********** Desktop view **********/
+@media (min-width: 992px) {
+   .col-lg-3 {
+    width: 31%;
+    float: left;
+    margin:5px;
+  }
+  
+}
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 48%;
+    margin:5px;
+  }
+  .col-md-12 {
+    width: 98%;
+    margin:5px;
+  }
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    width: 98%;
+    margin:5px;
+  }
+}
